@@ -1,0 +1,177 @@
+Adding reference: ant.PropertyHelper
+Detected Java version: 1.5 in: C:\Program Files\Java\jdk1.5.0_05\jre
+Detected OS: Windows XP
+Adding reference: ant.ComponentHelper
+Setting ro project property: ant.version -> Apache Ant version 1.6.5 compiled on June 2 2005
+Setting ro project property: ant.file -> I:\ray\workspace\locale\build.xml
+Adding reference: ant.projectHelper
+Adding reference: ant.parsing.context
+Adding reference: ant.targets
+parsing buildfile I:\ray\workspace\locale\build.xml with URI = file:///I:/ray/workspace/locale/build.xml
+Setting ro project property: ant.project.name -> locale
+Adding reference: locale
+Setting ro project property: ant.file.locale -> I:\ray\workspace\locale\build.xml
+Project base dir set to: I:\ray\workspace\locale
+ +Target: 
+ +Target: init
+ +Target: clean
+ +Target: compileSrc
+ +Target: jar
+ +Target: compileMain
+ +Target: run
+ +Target: runFromJar
+ +Target: compileTst
+ +Target: runATestCase
+ +Target: compileMainTestCase
+ +Target: test
+ +Target: junit
+ +Target: javadoc
+ +Target: all
+Attempting to create object of type org.apache.tools.ant.helper.DefaultExecutor
+Adding reference: ant.executor
+Build sequence for target(s) `test' is [init, compileSrc, jar, compileMain, compileTst, compileMainTestCase, test]
+Complete build sequence is [init, compileSrc, jar, compileMain, compileTst, compileMainTestCase, test, run, javadoc, junit, clean, runATestCase, all, runFromJar, ]
+
+init:
+Condition true; setting isDos to true
+Setting project property: isDos -> true
+Condition false; not setting isUnix
+Condition true; setting isWindows to true
+Setting project property: isWindows -> true
+Condition true; setting ray to true
+Setting project property: ray -> true
+Condition false; not setting rtayek
+Condition false; not setting home.unix
+Condition true; setting home.windows to true
+Setting project property: home.windows -> true
+Property ${rtayek} has not been set
+Condition false; not setting work.unix
+Property ${rtayek} has not been set
+Condition false; not setting work.windows
+Property ${home.unix} has not been set
+Condition false; not setting base
+Condition true; setting base to h:/java
+Setting project property: base -> h:/java
+Property ${work.unix} has not been set
+Condition false; not setting base
+Property ${work.windows} has not been set
+Condition false; not setting base
+
+compileSrc:
+Could not load a dependent class (com/sun/media/jai/codec/FileSeekableStream) for type image
+Could not load a dependent class (com/jcraft/jsch/UserInfo) for type sshexec
+Could not load a dependent class (com/jcraft/jsch/UserInfo) for type scp
+Could not load a dependent class (jdepend/xmlui/JDepend) for type jdepend
+fileset: Setup scanner in dir I:\ray\workspace\locale\1\src with patternSet{ includes: [] excludes: [] }
+    [javac] l\.nbattrs skipped - don't know how to handle it
+    [javac] l\L.java omitted as l/L.class is up to date.
+    [javac] l\L.properties skipped - don't know how to handle it
+    [javac] l\files\file1.txt skipped - don't know how to handle it
+fileset: Setup scanner in dir I:\ray\workspace\locale\2\src with patternSet{ includes: [] excludes: [] }
+    [javac] l2\.nbattrs skipped - don't know how to handle it
+    [javac] l2\L.java omitted as l2/L.class is up to date.
+    [javac] l2\L.properties skipped - don't know how to handle it
+    [javac] l2\files\file1.txt skipped - don't know how to handle it
+
+jar:
+fileset: Setup scanner in dir I:\ray\workspace\locale\1\src with patternSet{ includes: [**/files/*, **/*.properties] excludes: [] }
+     [copy] l\L.properties omitted as l/L.properties is up to date.
+     [copy] l\files\file1.txt omitted as l/files/file1.txt is up to date.
+fileset: Setup scanner in dir I:\ray\workspace\locale\2\src with patternSet{ includes: [**/files/*, **/*.properties] excludes: [] }
+     [copy] l2\L.properties omitted as l2/L.properties is up to date.
+     [copy] l2\files\file1.txt omitted as l2/files/file1.txt is up to date.
+fileset: Setup scanner in dir I:\ray\workspace\locale\build\srcobj with patternSet{ includes: [] excludes: [] }
+      [jar] l omitted as l/ is up to date.
+      [jar] l2 omitted as l2/ is up to date.
+      [jar] l2\files omitted as l2/files/ is up to date.
+      [jar] l\files omitted as l/files/ is up to date.
+      [jar] l2\L.class omitted as l2/L.class is up to date.
+      [jar] l2\L.properties omitted as l2/L.properties is up to date.
+      [jar] l2\files\file1.txt omitted as l2/files/file1.txt is up to date.
+      [jar] l\L.class omitted as l/L.class is up to date.
+      [jar] l\L.properties omitted as l/L.properties is up to date.
+      [jar] l\files\file1.txt omitted as l/files/file1.txt is up to date.
+
+compileMain:
+Property ${lib.path} has not been set
+fileset: Setup scanner in dir I:\ray\workspace\locale\top with patternSet{ includes: [] excludes: [MainTestCase.java] }
+    [javac] .nbattrs skipped - don't know how to handle it
+    [javac] Main.java omitted as Main.class is up to date.
+
+compileTst:
+Property ${lib.path} has not been set
+fileset: Setup scanner in dir I:\ray\workspace\locale\1\tst with patternSet{ includes: [] excludes: [] }
+    [javac] l\.nbattrs skipped - don't know how to handle it
+    [javac] l\LTestCase.java omitted as l/LTestCase.class is up to date.
+    [javac] l\LTestCase.properties skipped - don't know how to handle it
+    [javac] l\testFiles\file1.txt skipped - don't know how to handle it
+fileset: Setup scanner in dir I:\ray\workspace\locale\2\tst with patternSet{ includes: [] excludes: [] }
+    [javac] l2\.nbattrs skipped - don't know how to handle it
+    [javac] l2\LTestCase.java omitted as l2/LTestCase.class is up to date.
+    [javac] l2\LTestCase.properties skipped - don't know how to handle it
+    [javac] l2\testFiles\file1.txt skipped - don't know how to handle it
+fileset: Setup scanner in dir I:\ray\workspace\locale\1\tst with patternSet{ includes: [**/testFiles/*, **/*.properties] excludes: [] }
+     [copy] l\LTestCase.properties omitted as l/LTestCase.properties is up to date.
+     [copy] l\testFiles\file1.txt omitted as l/testFiles/file1.txt is up to date.
+fileset: Setup scanner in dir I:\ray\workspace\locale\2\tst with patternSet{ includes: [**/testFiles/*, **/*.properties] excludes: [] }
+     [copy] l2\LTestCase.properties omitted as l2/LTestCase.properties is up to date.
+     [copy] l2\testFiles\file1.txt omitted as l2/testFiles/file1.txt is up to date.
+
+compileMainTestCase:
+Property ${lib.path} has not been set
+fileset: Setup scanner in dir I:\ray\workspace\locale\top with patternSet{ includes: [] excludes: [Main.java] }
+    [javac] .nbattrs skipped - don't know how to handle it
+    [javac] MainTestCase.java omitted as MainTestCase.class is up to date.
+
+test:
+Property ${lib.path} has not been set
+dropping I:\ray\workspace\locale\${lib.path}\junit.jar from path as it doesn't exist
+dropping I:\ray\workspace\locale\${lib.path}\junit.jar from path as it doesn't exist
+     [java] Executing 'C:\Program Files\Java\jdk1.5.0_05\jre\bin\java.exe' with arguments:
+     [java] '-classpath'
+     [java] 'I:\ray\workspace\locale\build\lib\locale.jar;I:\ray\workspace\locale\build\srcobj;I:\ray\workspace\locale\build\tstobj;I:\ray\workspace\locale\build\topobj'
+     [java] 'MainTestCase'
+     [java] 
+     [java] The ' characters around the executable and arguments are
+     [java] not part of the command.
+dropping I:\ray\workspace\locale\${lib.path}\junit.jar from path as it doesn't exist
+dropping I:\ray\workspace\locale\${lib.path}\junit.jar from path as it doesn't exist
+Execute:Java13CommandLauncher: Executing 'C:\Program Files\Java\jdk1.5.0_05\jre\bin\java.exe' with arguments:
+'-classpath'
+'I:\ray\workspace\locale\build\lib\locale.jar;I:\ray\workspace\locale\build\srcobj;I:\ray\workspace\locale\build\tstobj;I:\ray\workspace\locale\build\topobj'
+'MainTestCase'
+
+The ' characters around the executable and arguments are
+not part of the command.
+     [java] java.lang.NoClassDefFoundError: junit/framework/TestCase
+     [java] 	at java.lang.ClassLoader.defineClass1(Native Method)
+     [java] 	at java.lang.ClassLoader.defineClass(ClassLoader.java:620)
+     [java] 	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:124)
+     [java] 	at java.net.URLClassLoader.defineClass(URLClassLoader.java:260)
+     [java] 	at java.net.URLClassLoader.access$100(URLClassLoader.java:56)
+     [java] 	at java.net.URLClassLoader$1.run(URLClassLoader.java:195)
+     [java] 	at java.security.AccessController.doPrivileged(Native Method)
+     [java] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:188)
+     [java] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+     [java] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:268)
+     [java] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:251)
+     [java] 	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:319)
+     [java] Exception in thread "main" 
+
+BUILD FAILED
+I:\ray\workspace\locale\build.xml:98: Java returned: 1
+	at org.apache.tools.ant.taskdefs.Java.execute(Java.java:87)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:275)
+	at org.apache.tools.ant.Task.perform(Task.java:364)
+	at org.apache.tools.ant.Target.execute(Target.java:341)
+	at org.apache.tools.ant.Target.performTasks(Target.java:369)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1216)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1185)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:40)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1068)
+	at org.apache.tools.ant.Main.runBuild(Main.java:668)
+	at org.apache.tools.ant.Main.startAnt(Main.java:187)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:246)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:67)
+
+Total time: 1 second

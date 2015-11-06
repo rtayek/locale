@@ -1,0 +1,208 @@
+head	1.3;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.3
+date	2004.02.06.21.26.19;	author rtayek;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2004.01.20.06.59.14;	author ray;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2004.01.20.03.29.29;	author rtayek;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.3
+log
+@chaged base to java/rel
+removed junit and optional from classpath on junit step
+@
+text
+@<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." default="all" name="locale">
+	<target name="init">
+		<condition property="isDos"> <os family="dos"/> </condition>
+		<condition property="isUnix"> <os family="unix"/> </condition>
+		<condition property="isWindows"> <os family="windows"/> </condition>
+		<condition property="ray"><equals arg1="ray" arg2="${user.name}"/></condition>
+		<condition property="rtayek"><equals arg1="rtayek" arg2="${user.name}"/></condition>
+		<condition property="home.unix"><and><istrue value="${ray}"/><os family="unix"/></and></condition>
+		<condition property="home.windows"><and><istrue value="${ray}"/><os family="dos"/></and></condition>
+		<condition property="work.unix"><and><istrue value="${rtayek}"/><os family="unix"/></and></condition>
+		<condition property="work.windows"><and><istrue value="${rtayek}"/><os family="windows"/></and></condition>
+		<condition property="base" value="/home/ray/java"> <istrue value="${home.unix}"/></condition>
+		<condition property="base" value="h:/java"> <istrue value="${home.windows}"/></condition>
+		<condition property="base" value="/home/rtayek/u/java/rel"> <istrue value="${work.unix}"/></condition>
+		<condition property="base" value="u:/java/rel"> <istrue value="${work.windows}"/></condition>
+		<property name="lib.path" value="${base}/lib"/>
+		<echo message="base=${base}"/>
+		<echo message="lib.path=${lib.path}"/>
+		<fail unless="base">no base!</fail>
+		<fail unless="lib.path">no lib.path!</fail>
+		<mkdir dir="build"/>
+	</target>
+	<target name="clean">
+		<delete dir="build"/>
+		<delete>
+			<fileset dir=".">
+				<include name="**/*.class"/>
+			</fileset>
+		</delete>
+	</target>
+	<target name="compileSrc" depends="init">
+		<mkdir dir="build/srcobj"/>
+		<javac debug="true" deprecation="true" destdir="build/srcobj" srcdir="1/src:2/src">
+		</javac>
+	</target>
+	<target name="jar" depends="compileSrc">
+		<mkdir dir="build/lib"/>
+		<copy todir="build/srcobj">
+			<fileset dir="1/src/" includes="**/files/*,**/*.properties"/> <!-- assume all are needed, be sure to pick up all of the resource bundles -->
+			<fileset dir="2/src/" includes="**/files/*,**/*.properties"/> <!-- assume all are needed -->
+		</copy>
+		<jar basedir="build/srcobj" compress="true" jarfile="build/lib/locale.jar"/>
+	</target>
+	<target name="compileMain" depends="jar"> 
+		<mkdir dir="build/topobj"/>
+		<javac debug="true" deprecation="true" destdir="build/topobj" srcdir="top" excludes="MainTestCase.java">
+			<classpath>
+				<pathelement location="${lib.path}/junit.jar"/>
+				<pathelement location="build/lib/locale.jar"/>
+			</classpath>
+		</javac>
+	</target>
+	<target name="run" depends="compileMain"> 
+		<java classname="Main" failonerror="true" fork="true">
+			<classpath>
+				<pathelement location="build/srcobj"/>
+				<pathelement location="build/topobj"/>
+			</classpath>
+		</java>
+	</target>
+	<target name="runFromJar" depends="compileMain,jar"> 
+		<java classname="Main" failonerror="true" fork="true">
+			<classpath>
+				<pathelement location="build/lib/locale.jar"/>
+				<pathelement location="build/topobj"/>
+			</classpath>
+		</java>
+	</target>
+	<target name="compileTst" depends="jar">
+		<mkdir dir="build/tstobj"/>
+		<javac debug="true" deprecation="true" destdir="build/tstobj" srcdir="1/tst:2/tst">
+			<classpath>
+				<pathelement location="${lib.path}/junit.jar"/>
+				<pathelement location="build/lib/locale.jar"/>
+			</classpath>
+		</javac>
+		<copy todir="build/tstobj">
+			<fileset dir="1/tst/" includes="**/testFiles/*,**/*.properties"/> <!-- assume all are needed -->
+			<fileset dir="2/tst/" includes="**/testFiles/*,**/*.properties"/> <!-- assume all are needed -->
+		</copy>
+	</target>
+	<target name="runATestCase" depends="compileTst">
+		<java classname="l.LTestCase" failonerror="true" fork="true">
+			<classpath>
+				<pathelement location="${lib.path}/junit.jar"/>
+				<pathelement location="build/lib/locale.jar"/>
+				<pathelement location="build/tstobj"/>
+			</classpath>
+		</java>
+	</target>
+	<target name="compileMainTestCase" depends="compileMain,compileTst"> 
+		<javac debug="true" deprecation="true" destdir="build/topobj" srcdir="top" excludes="Main.java">
+			<classpath>
+				<pathelement location="${lib.path}/junit.jar"/>
+				<pathelement location="build/lib/locale.jar"/>
+				<pathelement location="build/tstobj"/>
+				<pathelement location="build/topobj"/>
+			</classpath>
+		</javac>
+	</target>
+	<target name="test" depends="compileMain,compileMainTestCase">
+		<java classname="MainTestCase" failonerror="true" fork="true">
+			<classpath>
+				<pathelement location="${lib.path}/junit.jar"/>
+				<pathelement location="build/lib/locale.jar"/>
+				<pathelement location="build/srcobj"/><!-- added to test order -->
+				<pathelement location="build/tstobj"/>
+				<pathelement location="build/topobj"/>
+			</classpath>
+		</java>
+	</target>
+	<target name="junit" depends="compileMain,compileMainTestCase">
+		<junit printsummary="true" >
+			<formatter type="plain" usefile="false"/>
+			<test name="MainTestCase"/>
+			<classpath>   
+				<pathelement location="build/lib/locale.jar"/>
+				<pathelement location="build/tstobj"/>
+				<pathelement location="build/topobj"/>
+			</classpath>
+		</junit>
+	</target>
+	<target name="javadoc" depends="compileSrc">
+		<mkdir dir="build/apidoc"/>
+		<javadoc destdir="build/apidoc" packagenames="l,l2">
+			<sourcepath>
+				<pathelement location="1/src"/>
+				<pathelement location="2/src"/>
+			</sourcepath>
+		</javadoc>
+	</target>
+	<target name="all" depends="jar">
+	</target>
+</project>
+@
+
+
+1.2
+log
+@had a build mispelled as buid :(
+@
+text
+@d15 2
+a16 2
+		<condition property="base" value="/home/rtayek/u/java"> <istrue value="${work.unix}"/></condition>
+		<condition property="base" value="u:/java"> <istrue value="${work.windows}"/></condition>
+d107 1
+a117 2
+				<pathelement location="${lib.path}/junit.jar"/>
+				<pathelement location="${lib.path}/optional.jar"/>
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d47 1
+a47 1
+		<javac debug="true" deprecation="true" destdir="build/topobj" srcdir="top">
+a50 1
+				<pathelement location="buid/tstobj"/>
+d54 16
+a73 1
+				<!--pathelement location="C:/workspace/etc/netbeans/modules/ext/junit-3.8.1.jar"/-->
+d83 9
+d93 1
+a93 1
+		<javac debug="true" deprecation="true" destdir="build/topobj" srcdir="top">
+d97 1
+a97 1
+				<pathelement location="buid/tstobj"/>
+@

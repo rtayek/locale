@@ -1,0 +1,26 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	2004.01.20.03.29.29;	author rtayek;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@lib=~/u/java/lib
+CLASSPATH=$lib/junit-3.8.1.jar:1/src:2/src:1/tst:2/tst:.
+java MainTestCase
+@

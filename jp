@@ -1,0 +1,4 @@
+  javap -classpath build/srcobj l.L
+  javap -classpath build/srcobj l2.L
+  javap -classpath build/tstobj l.LTestCase
+  javap -classpath build/tstobj l2.LTestCase

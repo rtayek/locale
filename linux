@@ -1,0 +1,389 @@
+Detected Java version: 1.3 in: /usr/local/jdk1.3.1_04/jre
+Detected OS: Linux
+ +User task: propertyfile     org.apache.tools.ant.taskdefs.optional.PropertyFile
+ +User task: vsscheckin     org.apache.tools.ant.taskdefs.optional.vss.MSVSSCHECKIN
+ +User task: sql     org.apache.tools.ant.taskdefs.SQLExec
+ +User task: cvspass     org.apache.tools.ant.taskdefs.CVSPass
+ +User task: p4reopen     org.apache.tools.ant.taskdefs.optional.perforce.P4Reopen
+ +User task: csc     org.apache.tools.ant.taskdefs.optional.dotnet.CSharp
+ +User task: dirname     org.apache.tools.ant.taskdefs.Dirname
+ +User task: wlrun     org.apache.tools.ant.taskdefs.optional.ejb.WLRun
+ +User task: p4label     org.apache.tools.ant.taskdefs.optional.perforce.P4Label
+ +User task: p4revert     org.apache.tools.ant.taskdefs.optional.perforce.P4Revert
+ +User task: replaceregexp     org.apache.tools.ant.taskdefs.optional.ReplaceRegExp
+ +User task: get     org.apache.tools.ant.taskdefs.Get
+ +User task: jjtree     org.apache.tools.ant.taskdefs.optional.javacc.JJTree
+ +User task: sleep     org.apache.tools.ant.taskdefs.Sleep
+ +User task: jarlib-display     org.apache.tools.ant.taskdefs.optional.extension.JarLibDisplayTask
+ +User task: dependset     org.apache.tools.ant.taskdefs.DependSet
+ +User task: zip     org.apache.tools.ant.taskdefs.Zip
+ +User task: patch     org.apache.tools.ant.taskdefs.Patch
+ +User task: jspc     org.apache.tools.ant.taskdefs.optional.jsp.JspC
+ +User task: style     org.apache.tools.ant.taskdefs.XSLTProcess
+ +User task: test     org.apache.tools.ant.taskdefs.optional.Test
+ +User task: tstamp     org.apache.tools.ant.taskdefs.Tstamp
+ +User task: unwar     org.apache.tools.ant.taskdefs.Expand
+ +User task: vsshistory     org.apache.tools.ant.taskdefs.optional.vss.MSVSSHISTORY
+ +User task: icontract     org.apache.tools.ant.taskdefs.optional.IContract
+ +User task: cvschangelog     org.apache.tools.ant.taskdefs.cvslib.ChangeLogTask
+ +User task: p4submit     org.apache.tools.ant.taskdefs.optional.perforce.P4Submit
+ +User task: ccmcheckin     org.apache.tools.ant.taskdefs.optional.ccm.CCMCheckin
+ +User task: p4change     org.apache.tools.ant.taskdefs.optional.perforce.P4Change
+ +User task: bzip2     org.apache.tools.ant.taskdefs.BZip2
+ +User task: p4delete     org.apache.tools.ant.taskdefs.optional.perforce.P4Delete
+ +User task: vssadd     org.apache.tools.ant.taskdefs.optional.vss.MSVSSADD
+ +User task: javadoc     org.apache.tools.ant.taskdefs.Javadoc
+ +User task: translate     org.apache.tools.ant.taskdefs.optional.i18n.Translate
+ +User task: signjar     org.apache.tools.ant.taskdefs.SignJar
+ +User task: vajload     org.apache.tools.ant.taskdefs.optional.ide.VAJLoadProjects
+ +User task: jarlib-available     org.apache.tools.ant.taskdefs.optional.extension.JarLibAvailableTask
+ +User task: WsdlToDotnet     org.apache.tools.ant.taskdefs.optional.dotnet.WsdlToDotnet
+ +User task: buildnumber     org.apache.tools.ant.taskdefs.BuildNumber
+ +User task: jpcovmerge     org.apache.tools.ant.taskdefs.optional.sitraka.CovMerge
+ +User task: ejbjar     org.apache.tools.ant.taskdefs.optional.ejb.EjbJar
+ +User task: war     org.apache.tools.ant.taskdefs.War
+Could not load a dependent class (com/starbase/starteam/Item) for task stlist
+ +User task: rename     org.apache.tools.ant.taskdefs.Rename
+ +User task: sequential     org.apache.tools.ant.taskdefs.Sequential
+ +User task: serverdeploy     org.apache.tools.ant.taskdefs.optional.j2ee.ServerDeploy
+ +User task: property     org.apache.tools.ant.taskdefs.Property
+ +User task: move     org.apache.tools.ant.taskdefs.Move
+ +User task: copydir     org.apache.tools.ant.taskdefs.Copydir
+ +User task: cccheckin     org.apache.tools.ant.taskdefs.optional.clearcase.CCCheckin
+ +User task: wljspc     org.apache.tools.ant.taskdefs.optional.jsp.WLJspc
+ +User task: fixcrlf     org.apache.tools.ant.taskdefs.FixCRLF
+Could not load a dependent class (com/oroinc/net/SocketClient) for task telnet
+ +User task: sosget     org.apache.tools.ant.taskdefs.optional.sos.SOSGet
+ +User task: pathconvert     org.apache.tools.ant.taskdefs.PathConvert
+ +User task: record     org.apache.tools.ant.taskdefs.Recorder
+ +User task: p4sync     org.apache.tools.ant.taskdefs.optional.perforce.P4Sync
+ +User task: exec     org.apache.tools.ant.taskdefs.ExecTask
+ +User task: p4edit     org.apache.tools.ant.taskdefs.optional.perforce.P4Edit
+ +User task: manifest     org.apache.tools.ant.taskdefs.ManifestTask
+ +User task: maudit     org.apache.tools.ant.taskdefs.optional.metamata.MAudit
+ +User task: antlr     org.apache.tools.ant.taskdefs.optional.ANTLR
+ +User task: netrexxc     org.apache.tools.ant.taskdefs.optional.NetRexxC
+Could not load a dependent class (com/oroinc/net/ftp/FTP) for task ftp
+ +User task: jpcovreport     org.apache.tools.ant.taskdefs.optional.sitraka.CovReport
+ +User task: execon     org.apache.tools.ant.taskdefs.ExecuteOn
+ +User task: ccmcheckout     org.apache.tools.ant.taskdefs.optional.ccm.CCMCheckout
+ +User task: ant     org.apache.tools.ant.taskdefs.Ant
+ +User task: xmlvalidate     org.apache.tools.ant.taskdefs.optional.XMLValidateTask
+ +User task: xslt     org.apache.tools.ant.taskdefs.XSLTProcess
+ +User task: iplanet-ejbc     org.apache.tools.ant.taskdefs.optional.ejb.IPlanetEjbcTask
+ +User task: ccmcheckintask     org.apache.tools.ant.taskdefs.optional.ccm.CCMCheckinDefault
+ +User task: gzip     org.apache.tools.ant.taskdefs.GZip
+ +User task: native2ascii     org.apache.tools.ant.taskdefs.optional.Native2Ascii
+ +User task: starteam     org.apache.tools.ant.taskdefs.optional.scm.AntStarTeamCheckOut
+ +User task: ear     org.apache.tools.ant.taskdefs.Ear
+ +User task: input     org.apache.tools.ant.taskdefs.Input
+ +User task: rmic     org.apache.tools.ant.taskdefs.Rmic
+ +User task: checksum     org.apache.tools.ant.taskdefs.Checksum
+ +User task: mail     org.apache.tools.ant.taskdefs.email.EmailTask
+ +User task: loadfile     org.apache.tools.ant.taskdefs.LoadFile
+ +User task: vsscheckout     org.apache.tools.ant.taskdefs.optional.vss.MSVSSCHECKOUT
+ +User task: stylebook     org.apache.tools.ant.taskdefs.optional.StyleBook
+ +User task: soscheckin     org.apache.tools.ant.taskdefs.optional.sos.SOSCheckin
+ +User task: mimemail     org.apache.tools.ant.taskdefs.optional.net.MimeMail
+ +User task: stlabel     org.apache.tools.ant.taskdefs.optional.starteam.StarTeamLabel
+ +User task: gunzip     org.apache.tools.ant.taskdefs.GUnzip
+ +User task: concat     org.apache.tools.ant.taskdefs.Concat
+ +User task: cab     org.apache.tools.ant.taskdefs.optional.Cab
+ +User task: touch     org.apache.tools.ant.taskdefs.Touch
+ +User task: parallel     org.apache.tools.ant.taskdefs.Parallel
+ +User task: splash     org.apache.tools.ant.taskdefs.optional.splash.SplashTask
+ +User task: antcall     org.apache.tools.ant.taskdefs.CallTarget
+ +User task: cccheckout     org.apache.tools.ant.taskdefs.optional.clearcase.CCCheckout
+ +User task: typedef     org.apache.tools.ant.taskdefs.Typedef
+ +User task: p4have     org.apache.tools.ant.taskdefs.optional.perforce.P4Have
+ +User task: filter     org.apache.tools.ant.taskdefs.Filter
+ +User task: xmlproperty     org.apache.tools.ant.taskdefs.XmlProperty
+Could not load a dependent class (jdepend/xmlui/JDepend) for task jdepend
+ +User task: copy     org.apache.tools.ant.taskdefs.Copy
+ +User task: antstructure     org.apache.tools.ant.taskdefs.AntStructure
+Could not load a dependent class (com/ibm/bsf/BSFException) for task script
+ +User task: ccmcreatetask     org.apache.tools.ant.taskdefs.optional.ccm.CCMCreateTask
+ +User task: rpm     org.apache.tools.ant.taskdefs.optional.Rpm
+ +User task: delete     org.apache.tools.ant.taskdefs.Delete
+ +User task: replace     org.apache.tools.ant.taskdefs.Replace
+ +User task: mmetrics     org.apache.tools.ant.taskdefs.optional.metamata.MMetrics
+ +User task: waitfor     org.apache.tools.ant.taskdefs.WaitFor
+ +User task: untar     org.apache.tools.ant.taskdefs.Untar
+ +User task: loadproperties     org.apache.tools.ant.taskdefs.LoadProperties
+ +User task: available     org.apache.tools.ant.taskdefs.Available
+ +User task: echoproperties     org.apache.tools.ant.taskdefs.optional.EchoProperties
+ +User task: junit     org.apache.tools.ant.taskdefs.optional.junit.JUnitTask
+Could not load a dependent class (com/starbase/starteam/Item) for task stcheckin
+ +User task: vajexport     org.apache.tools.ant.taskdefs.optional.ide.VAJExport
+Could not load a dependent class (com/starbase/starteam/Item) for task stcheckout
+ +User task: bunzip2     org.apache.tools.ant.taskdefs.BUnzip2
+ +User task: copyfile     org.apache.tools.ant.taskdefs.Copyfile
+ +User task: vsscreate     org.apache.tools.ant.taskdefs.optional.vss.MSVSSCREATE
+ +User task: ejbc     org.apache.tools.ant.taskdefs.optional.ejb.Ejbc
+ +User task: unjar     org.apache.tools.ant.taskdefs.Expand
+ +User task: wsdltodotnet     org.apache.tools.ant.taskdefs.optional.dotnet.WsdlToDotnet
+ +User task: mkdir     org.apache.tools.ant.taskdefs.Mkdir
+ +User task: condition     org.apache.tools.ant.taskdefs.ConditionTask
+ +User task: cvs     org.apache.tools.ant.taskdefs.Cvs
+ +User task: tempfile     org.apache.tools.ant.taskdefs.TempFile
+ +User task: junitreport     org.apache.tools.ant.taskdefs.optional.junit.XMLResultAggregator
+ +User task: taskdef     org.apache.tools.ant.taskdefs.Taskdef
+ +User task: echo     org.apache.tools.ant.taskdefs.Echo
+ +User task: ccupdate     org.apache.tools.ant.taskdefs.optional.clearcase.CCUpdate
+ +User task: java     org.apache.tools.ant.taskdefs.Java
+ +User task: renameext     org.apache.tools.ant.taskdefs.optional.RenameExtensions
+ +User task: vsslabel     org.apache.tools.ant.taskdefs.optional.vss.MSVSSLABEL
+ +User task: basename     org.apache.tools.ant.taskdefs.Basename
+ +User task: javadoc2     org.apache.tools.ant.taskdefs.Javadoc
+ +User task: vsscp     org.apache.tools.ant.taskdefs.optional.vss.MSVSSCP
+ +User task: tar     org.apache.tools.ant.taskdefs.Tar
+ +User task: vajimport     org.apache.tools.ant.taskdefs.optional.ide.VAJImport
+ +User task: setproxy     org.apache.tools.ant.taskdefs.optional.net.SetProxy
+ +User task: wlstop     org.apache.tools.ant.taskdefs.optional.ejb.WLStop
+ +User task: p4counter     org.apache.tools.ant.taskdefs.optional.perforce.P4Counter
+ +User task: ilasm     org.apache.tools.ant.taskdefs.optional.dotnet.Ilasm
+ +User task: soscheckout     org.apache.tools.ant.taskdefs.optional.sos.SOSCheckout
+ +User task: apply     org.apache.tools.ant.taskdefs.Transform
+ +User task: ccuncheckout     org.apache.tools.ant.taskdefs.optional.clearcase.CCUnCheckout
+ +User task: jarlib-resolve     org.apache.tools.ant.taskdefs.optional.extension.JarLibResolveTask
+ +User task: jlink     org.apache.tools.ant.taskdefs.optional.jlink.JlinkTask
+ +User task: cvstagdiff     org.apache.tools.ant.taskdefs.cvslib.CvsTagDiff
+ +User task: javacc     org.apache.tools.ant.taskdefs.optional.javacc.JavaCC
+ +User task: chmod     org.apache.tools.ant.taskdefs.Chmod
+ +User task: pvcs     org.apache.tools.ant.taskdefs.optional.pvcs.Pvcs
+ +User task: jarlib-manifest     org.apache.tools.ant.taskdefs.optional.extension.JarLibManifestTask
+ +User task: jar     org.apache.tools.ant.taskdefs.Jar
+ +User task: sound     org.apache.tools.ant.taskdefs.optional.sound.SoundTask
+ +User task: mparse     org.apache.tools.ant.taskdefs.optional.metamata.MParse
+ +User task: blgenclient     org.apache.tools.ant.taskdefs.optional.ejb.BorlandGenerateClient
+ +User task: uptodate     org.apache.tools.ant.taskdefs.UpToDate
+ +User task: genkey     org.apache.tools.ant.taskdefs.GenerateKey
+ +User task: javah     org.apache.tools.ant.taskdefs.optional.Javah
+ +User task: ccmreconfigure     org.apache.tools.ant.taskdefs.optional.ccm.CCMReconfigure
+ +User task: fail     org.apache.tools.ant.taskdefs.Exit
+ +User task: unzip     org.apache.tools.ant.taskdefs.Expand
+ +User task: javac     org.apache.tools.ant.taskdefs.Javac
+ +User task: p4add     org.apache.tools.ant.taskdefs.optional.perforce.P4Add
+ +User task: jpcoverage     org.apache.tools.ant.taskdefs.optional.sitraka.Coverage
+ +User task: soslabel     org.apache.tools.ant.taskdefs.optional.sos.SOSLabel
+ +User task: depend     org.apache.tools.ant.taskdefs.optional.depend.Depend
+ +User task: vssget     org.apache.tools.ant.taskdefs.optional.vss.MSVSSGET
+ +User task: deltree     org.apache.tools.ant.taskdefs.Deltree
+ +User task: ddcreator     org.apache.tools.ant.taskdefs.optional.ejb.DDCreator
+ +User datatype: patternset     org.apache.tools.ant.types.PatternSet
+ +User datatype: filterset     org.apache.tools.ant.types.FilterSet
+ +User datatype: libfileset     org.apache.tools.ant.taskdefs.optional.extension.LibFileSet
+ +User datatype: filterreader     org.apache.tools.ant.types.AntFilterReader
+ +User datatype: extension     org.apache.tools.ant.taskdefs.optional.extension.ExtensionAdapter
+ +User datatype: fileset     org.apache.tools.ant.types.FileSet
+ +User datatype: dirset     org.apache.tools.ant.types.DirSet
+ +User datatype: filelist     org.apache.tools.ant.types.FileList
+ +User datatype: filterchain     org.apache.tools.ant.types.FilterChain
+ +User datatype: path     org.apache.tools.ant.types.Path
+ +User datatype: classfileset     org.apache.tools.ant.types.optional.depend.ClassfileSet
+ +User datatype: description     org.apache.tools.ant.types.Description
+ +User datatype: xmlcatalog     org.apache.tools.ant.types.XMLCatalog
+ +User datatype: selector     org.apache.tools.ant.types.selectors.SelectSelector
+ +User datatype: mapper     org.apache.tools.ant.types.Mapper
+ +User datatype: substitution     org.apache.tools.ant.types.Substitution
+ +User datatype: extensionSet     org.apache.tools.ant.taskdefs.optional.extension.ExtensionSet
+ +User datatype: regexp     org.apache.tools.ant.types.RegularExpression
+Setting ro project property: ant.version -> Apache Ant version 1.5.4 compiled on August 12 2003
+Setting ro project property: ant.file -> /Z/Users/ray/projects/locale/build.xml
+parsing buildfile build.xml with URI = file:/Z/Users/ray/projects/locale/build.xml
+Setting ro project property: ant.project.name -> locale
+Adding reference: locale -> org.apache.tools.ant.Project@645076
+Project base dir set to: /Z/Users/ray/projects/locale
+ +Target: init
+   +Task: condition
+   +Task: condition
+   +Task: condition
+   +Task: condition
+   +Task: condition
+   +Task: condition
+   +Task: condition
+   +Task: condition
+   +Task: condition
+   +Task: condition
+   +Task: condition
+   +Task: condition
+   +Task: condition
+   +Task: property
+   +Task: echo
+   +Task: echo
+   +Task: fail
+   +Task: fail
+   +Task: mkdir
+ +Target: clean
+   +Task: delete
+   +Task: delete
+ +Target: compileSrc
+   +Task: mkdir
+   +Task: javac
+ +Target: jar
+   +Task: mkdir
+   +Task: copy
+   +Task: jar
+ +Target: compileMain
+   +Task: mkdir
+   +Task: javac
+ +Target: run
+   +Task: java
+ +Target: runFromJar
+   +Task: java
+ +Target: compileTst
+   +Task: mkdir
+   +Task: javac
+   +Task: copy
+ +Target: runATestCase
+   +Task: java
+ +Target: compileMainTestCase
+   +Task: javac
+ +Target: test
+   +Task: java
+ +Target: junit
+   +Task: junit
+    [junit] Found /Z/Users/ray/java/apps/ant/lib/junit.jar
+    [junit] Found /Z/Users/ray/java/apps/ant/lib/ant.jar
+    [junit] Found /Z/Users/ray/java/apps/ant/lib/optional.jar
+ +Target: javadoc
+   +Task: mkdir
+   +Task: javadoc
+ +Target: all
+Build sequence for target `test' is [init, compileSrc, jar, compileMain, compileTst, compileMainTestCase, test]
+Complete build sequence is [init, compileSrc, jar, compileMain, compileTst, compileMainTestCase, test, run, javadoc, junit, clean, runATestCase, all, runFromJar]
+
+init:
+Condition false; not setting isDos
+Condition true; setting isUnix to true
+Setting project property: isUnix -> true
+Condition false; not setting isWindows
+Condition false; not setting ray
+Condition true; setting rtayek to true
+Setting project property: rtayek -> true
+Property ${ray} has not been set
+Condition false; not setting home.unix
+Property ${ray} has not been set
+Condition false; not setting home.windows
+Condition true; setting work.unix to true
+Setting project property: work.unix -> true
+Condition false; not setting work.windows
+Property ${home.unix} has not been set
+Condition false; not setting base
+Property ${home.windows} has not been set
+Condition false; not setting base
+Condition true; setting base to /home/rtayek/u/java
+Setting project property: base -> /home/rtayek/u/java
+Property ${work.windows} has not been set
+Condition false; not setting base
+Setting project property: lib.path -> /home/rtayek/u/java/lib
+     [echo] base=/home/rtayek/u/java
+     [echo] lib.path=/home/rtayek/u/java/lib
+
+compileSrc:
+fileset: Setup scanner in dir /Z/Users/ray/projects/locale/1/src with patternSet{ includes: [] excludes: [] }
+    [javac] l/.nbattrs skipped - don't know how to handle it
+    [javac] l/L.java omitted as l/L.class is up to date.
+    [javac] l/L.properties skipped - don't know how to handle it
+    [javac] l/files/file1.txt skipped - don't know how to handle it
+fileset: Setup scanner in dir /Z/Users/ray/projects/locale/2/src with patternSet{ includes: [] excludes: [] }
+    [javac] l2/L.java omitted as l2/L.class is up to date.
+    [javac] l2/L.properties skipped - don't know how to handle it
+    [javac] l2/files/file1.txt skipped - don't know how to handle it
+    [javac] l2/.nbattrs skipped - don't know how to handle it
+
+jar:
+fileset: Setup scanner in dir /Z/Users/ray/projects/locale/1/src with patternSet{ includes: [**/files/*, **/*.properties] excludes: [] }
+     [copy] l/L.properties omitted as l/L.properties is up to date.
+     [copy] l/files/file1.txt omitted as l/files/file1.txt is up to date.
+fileset: Setup scanner in dir /Z/Users/ray/projects/locale/2/src with patternSet{ includes: [**/files/*, **/*.properties] excludes: [] }
+     [copy] l2/L.properties omitted as l2/L.properties is up to date.
+     [copy] l2/files/file1.txt omitted as l2/files/file1.txt is up to date.
+fileset: Setup scanner in dir /Z/Users/ray/projects/locale/build/srcobj with patternSet{ includes: [] excludes: [] }
+      [jar]  omitted as  is up to date.
+      [jar] l omitted as l/ is up to date.
+      [jar] l/files omitted as l/files/ is up to date.
+      [jar] l2 omitted as l2/ is up to date.
+      [jar] l2/files omitted as l2/files/ is up to date.
+      [jar] l/L.class omitted as l/L.class is up to date.
+      [jar] l/files/file1.txt omitted as l/files/file1.txt is up to date.
+      [jar] l/L.properties omitted as l/L.properties is up to date.
+      [jar] l2/L.class omitted as l2/L.class is up to date.
+      [jar] l2/L.properties omitted as l2/L.properties is up to date.
+      [jar] l2/files/file1.txt omitted as l2/files/file1.txt is up to date.
+
+compileMain:
+fileset: Setup scanner in dir /Z/Users/ray/projects/locale/top with patternSet{ includes: [] excludes: [MainTestCase.java] }
+    [javac] Main.java omitted as Main.class is up to date.
+    [javac] .nbattrs skipped - don't know how to handle it
+
+compileTst:
+fileset: Setup scanner in dir /Z/Users/ray/projects/locale/1/tst with patternSet{ includes: [] excludes: [] }
+    [javac] l/.nbattrs skipped - don't know how to handle it
+    [javac] l/LTestCase.java omitted as l/LTestCase.class is up to date.
+    [javac] l/LTestCase.properties skipped - don't know how to handle it
+    [javac] l/testFiles/file1.txt skipped - don't know how to handle it
+fileset: Setup scanner in dir /Z/Users/ray/projects/locale/2/tst with patternSet{ includes: [] excludes: [] }
+    [javac] l2/.nbattrs skipped - don't know how to handle it
+    [javac] l2/LTestCase.java omitted as l2/LTestCase.class is up to date.
+    [javac] l2/LTestCase.properties skipped - don't know how to handle it
+    [javac] l2/testFiles/file1.txt skipped - don't know how to handle it
+fileset: Setup scanner in dir /Z/Users/ray/projects/locale/1/tst with patternSet{ includes: [**/testFiles/*, **/*.properties] excludes: [] }
+     [copy] l/LTestCase.properties omitted as l/LTestCase.properties is up to date.
+     [copy] l/testFiles/file1.txt omitted as l/testFiles/file1.txt is up to date.
+fileset: Setup scanner in dir /Z/Users/ray/projects/locale/2/tst with patternSet{ includes: [**/testFiles/*, **/*.properties] excludes: [] }
+     [copy] l2/LTestCase.properties omitted as l2/LTestCase.properties is up to date.
+     [copy] l2/testFiles/file1.txt omitted as l2/testFiles/file1.txt is up to date.
+
+compileMainTestCase:
+fileset: Setup scanner in dir /Z/Users/ray/projects/locale/top with patternSet{ includes: [] excludes: [Main.java] }
+    [javac] MainTestCase.java omitted as MainTestCase.class is up to date.
+    [javac] .nbattrs skipped - don't know how to handle it
+
+test:
+dropping /home/rtayek/u/java/lib/junit.jar from path as it doesn't exist
+dropping /home/rtayek/u/java/lib/junit.jar from path as it doesn't exist
+     [java] Executing '/usr/local/jdk1.3.1_04/jre/bin/java' with arguments:
+     [java] '-classpath'
+     [java] '/Z/Users/ray/projects/locale/build/lib/locale.jar:/Z/Users/ray/projects/locale/build/tstobj:/Z/Users/ray/projects/locale/build/topobj'
+     [java] 'MainTestCase'
+     [java] 
+     [java] The ' characters around the executable and arguments are
+     [java] not part of the command.
+dropping /home/rtayek/u/java/lib/junit.jar from path as it doesn't exist
+dropping /home/rtayek/u/java/lib/junit.jar from path as it doesn't exist
+Execute:Java13CommandLauncher: Executing '/usr/local/jdk1.3.1_04/jre/bin/java' with arguments:
+'-classpath'
+'/Z/Users/ray/projects/locale/build/lib/locale.jar:/Z/Users/ray/projects/locale/build/tstobj:/Z/Users/ray/projects/locale/build/topobj'
+'MainTestCase'
+
+The ' characters around the executable and arguments are
+not part of the command.
+
+     [java] Exception in thread "main" java.lang.NoClassDefFoundError: junit/framework/TestCase
+     [java] 	at java.lang.ClassLoader.defineClass0(Native Method)
+     [java] 	at java.lang.ClassLoader.defineClass(ClassLoader.java:488)
+     [java] 	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:106)
+     [java] 	at java.net.URLClassLoader.defineClass(URLClassLoader.java:243)
+     [java] 	at java.net.URLClassLoader.access$100(URLClassLoader.java:51)
+     [java] 	at java.net.URLClassLoader$1.run(URLClassLoader.java:190)
+     [java] 	at java.security.AccessController.doPrivileged(Native Method)
+     [java] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:183)
+     [java] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:294)
+     [java] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:281)
+     [java] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:250)
+     [java] 	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:310)
+
+BUILD FAILED
+file:/Z/Users/ray/projects/locale/build.xml:103: Java returned: 1
+	at org.apache.tools.ant.taskdefs.Java.execute(Java.java:110)
+	at org.apache.tools.ant.Task.perform(Task.java:341)
+	at org.apache.tools.ant.Target.execute(Target.java:309)
+	at org.apache.tools.ant.Target.performTasks(Target.java:336)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1339)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1255)
+	at org.apache.tools.ant.Main.runBuild(Main.java:609)
+	at org.apache.tools.ant.Main.start(Main.java:196)
+	at org.apache.tools.ant.Main.main(Main.java:235)
+
+Total time: 2 seconds

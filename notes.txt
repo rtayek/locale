@@ -1,0 +1,7 @@
+when tst/!=src/ then i can not do a: class Foo { public static void main(String[] argument) throws Exception { FooTestCase.main(new String[0]); } } since it can not find the FooTestCase :(
+
+seems to be working using getting files and properties rescource bundles from jar
+
+integrate this with junit now in ant!
+
+currently blowing on line 47 of the build file with a can not file class l test case?

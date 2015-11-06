@@ -1,0 +1,8 @@
+cleanj
+lib=~/u/java/lib
+CLASSPATH=$lib/junit-3.8.1.jar:1/src:2/src:1/tst:2/tst:
+javac 1/src/l/L.java
+javac 1/tst/l/LTestCase.java
+javac 2/src/l2/L.java
+javac 2/tst/l2/LTestCase.java
+javac *.java
